@@ -44,12 +44,16 @@
               <li class="nav-item pl-2">
                 <a activeclass="menu_active"class="nav-link" href="{{ route('about') }}">About</a>
               </li>
+
+              <li class="nav-item pl-2">
+                <a activeclass="menu_active"class="nav-link" href="{{ route('book') }}">Book</a>
+              </li>
               
              
             </ul>
             <form class="d-flex">
-              <button class="btn btn-outline-success" type="submit">Log In</button>
-              <button class="btn btn-outline-success" type="submit">Sign Up</button>
+            <button class="btn btn-outline-success" type="submit">Log In</button>
+              <a class="btn btn-outline-success" href="{{ route('student.index') }}" type="submit">Sign Up</a>
             </form>
           </div>
         </div>

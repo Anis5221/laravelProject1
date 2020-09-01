@@ -40,6 +40,28 @@ Route::get('edit/post/{id}', 'WriteController@editPost');
 
 
 
+// user details-----
+// Route::get('user/details','StudentController@create')->name('user/details');
+// Route::get('all/user','StudentController@index')->name('all.user');
+// Route::post('insert/user','StudentController@store')->name('insert/user');
+// Route::get('view/student/{id}','StudentController@show');
+// Route::get('edit/student/{id}','StudentController@edit');
+// Route::post('update/student/{id}','StudentController@update');
+// Route::get('delete/student/{id}','StudentController@destroy');
+
+Route::resource('student','StudentController');
+// Book area----
+
+Route::get('user/book','BookController@index')->name('book');
+Route::get('all/book','BookController@allbook')->name('all.book');
+Route::post('stor/book','BookController@stor')->name('store.book');
+Route::get('view/book/{id}', 'BookController@show');
+Route::get('edit/book/{id}', 'BookController@edit');
+Route::post('update/book/{id}', 'BookController@update');
+Route::get('delete/book/{id}','BookController@destroy');
+
+
+
 
 
 

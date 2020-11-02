@@ -62,6 +62,16 @@ Route::get('delete/book/{id}','BookController@destroy');
 
 
 
+// eloquent pages------
+Route::get('/eloquent', 'HomeController@eloquent')->name('eloquent');
+Route::get('/HasOne', 'AoooController@index')->name('hasOne');
+Route::get('/Belongsto', 'PhoneController@index')->name('belonto');
+Route::get('/Belongstomany','PootController@index')->name('belongstomany');
+Route::get('/Hasmany', 'CaaatController@index')->name('hasmany');
+Route::get('gouser/{id}', 'CaaatController@gouser');
+
+
+
 
 
 

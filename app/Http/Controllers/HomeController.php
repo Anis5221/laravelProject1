@@ -13,4 +13,10 @@ class HomeController extends Controller
                ->select('posts.*','categorys.name')->paginate(3);
         return view('pages.index', compact('pos'));
     } 
+
+
+
+    public function eloquent(){
+        return view('eloquent.show');
+    }
 }

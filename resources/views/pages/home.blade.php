@@ -48,6 +48,10 @@
               <li class="nav-item pl-2">
                 <a activeclass="menu_active"class="nav-link" href="{{ route('book') }}">Book</a>
               </li>
+
+              <li class="nav-item pl-2">
+                <a activeclass="menu_active"class="nav-link" href="{{ route('eloquent') }}">Eloquent</a>
+              </li>
               
              
             </ul>

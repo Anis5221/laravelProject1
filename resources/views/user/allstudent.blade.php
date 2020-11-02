@@ -32,7 +32,7 @@
                            <td class="text-center">
                                <a href="{{ URL::to('student/'.$item->id).'/edit' }}" class="btn btn-info btn-sm">Edit</a>
                                <form action="{{ URL::to('student/'.$item->id) }}" method="post">
-                               
+
                                 @csrf
                                 @method('delete')
                                 <button class="btn btn-danger btn-sm">Delete</button>
